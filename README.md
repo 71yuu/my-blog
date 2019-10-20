@@ -34,7 +34,7 @@
 
 - 首页
 
-  ![](screenhots\前台首页.jpg)
+  ![](\screenhots\前台首页.jpg)
 
 - 搜索页
 
