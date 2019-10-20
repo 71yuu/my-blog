@@ -38,54 +38,54 @@
 
 - 搜索页
 
-  ![](\screenhots\搜索页面.jpg)
+  ![](/screenhots/搜索页面.jpg)
 
 - 文章详情页
 
-  ![](\screenhots\前台文章.jpg)
+  ![](/screenhots/前台文章.jpg)
 
 - 公告页面
 
-  ![](\screenhots\公告页面.jpg)
+  ![](/screenhots/公告页面.jpg)
 
 - 关于我们
 
-  ![](\screenhots\关于我们.jpg)
+  ![](/screenhots/关于我们.jpg)
 
 ### 后台系统
 
 - 管理员登录
 
-  ![](\screenhots\后台登录.jpg)
+  ![](/screenhots/后台登录.jpg)
 
 - 后台首页
 
-  ![](\screenhots\后台首页.jpg)
+  ![](/screenhots/后台首页.jpg)
 
 - 文章管理
 
-  ![](\screenhots\文章管理.jpg)
+  ![](/screenhots/文章管理.jpg)
 
 - 发布文章
 
-  ![](\screenhots\新增文章.jpg)
+  ![](/screenhots/新增文章.jpg)
 
 - 分类管理
 
-  ![](\screenhots\分类管理.jpg)
+  ![](/screenhots/分类管理.jpg)
 
 - 标签管理
 
-  ![](\screenhots\标签管理.jpg)
+  ![](/screenhots/标签管理.jpg)
 
 - 公告管理
 
-  ![](\screenhots\公告管理.jpg)
+  ![](/screenhots/公告管理.jpg)
 
 - 页面管理
 
-  ![](\screenhots\页面管理.jpg)
+  ![](/screenhots/页面管理.jpg)
 
 - 用户管理
 
-  ![](\screenhots\用户管理.jpg)
+  ![](/screenhots/用户管理.jpg)
