@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yuu.blog.dao.ArticleCategoryRefMapper">
+    <resultMap id="BaseResultMap" type="com.yuu.blog.pojo.ArticleCategoryRef">
+        <result column="article_id" jdbcType="INTEGER" property="articleId"/>
+        <result column="category_id" jdbcType="INTEGER" property="categoryId"/>
+    </resultMap>
+
+    <sql id="tb">article_category_ref</sql>
+
+    <!-- 根据文章 ID 获取分类列表 -->
+    <select id="listCategoryByArticleId" parameterType="int" resultType="Category">
+        SELECT
+        category.category_id, category.category_pid, category.category_name
+        FROM category, article_category_ref
+        WHERE article_category_ref.article_id = #{value} AND
+        article_category_ref.category_id = category.category_id
+        ORDER BY category.category_pid asc
+    </select>
+
+    <!-- 添加文章和分类关联记录 -->
+    <insert id="insert" parameterType="ArticleCategoryRef">
+        insert into
+        <include refid="tb"/>
+        (article_id, category_id)
+        values (#{articleId}, #{categoryId})
+    </insert>
+
+    <!-- 删除文章与分类之间的关系 -->
+    <delete id="deleteByCategoryId" parameterType="int">
+        delete from <include refid="tb"/>
+        where article_id = #{articleId}
+    </delete>
+    
+    <!-- 删除分类文章 -->
+    <delete id="deleteByArticleId" parameterType="int">
+        delete from <include refid="tb"/>
+        where article_id = #{articleId}
+    </delete>
+
+    <!-- 根据分类 ID 统计文章数 -->
+    <select id="countArticleByCategoryId" parameterType="int" resultType="int">
+        select count(*) from
+        <include refid="tb"/>
+        where category_id = #{categoryId}
+    </select>
+
+    <!-- 根据文章 ID 查找分类 ID -->
+    <select id="selectCategoryIdByArticleId" resultType="int">
+        select category_id
+        from <include refid="tb"/>
+        where article_id = #{articleId}
+    </select>
+
+</mapper>
