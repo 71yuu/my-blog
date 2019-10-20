@@ -84,7 +84,7 @@
 
 - 页面管理
 
-  ![](D:\项目\个人项目\ssm\24 YuuBlog\06 源代码\screenhots\页面管理.jpg)
+  ![](\screenhots\页面管理.jpg)
 
 - 用户管理
 
