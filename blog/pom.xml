@@ -43,7 +43,7 @@
         <alibaba-druid.version>1.1.6</alibaba-druid.version>
 
         <!-- MySQL 驱动的版本 -->
-        <mysql.version>5.1.46</mysql.version>
+        <mysql.version>8.0.28</mysql.version>
 
         <!-- Mybatis 的版本 -->
         <mybatis.version>3.4.1</mybatis.version>
