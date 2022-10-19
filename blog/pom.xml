@@ -28,7 +28,7 @@
         <spring.version>4.3.17.RELEASE</spring.version>
 
         <!-- Jackson 的版本 -->
-        <jackson.version>2.5.0</jackson.version>
+        <jackson.version>2.13.4.1</jackson.version>
 
         <!-- Json 的版本 -->
         <json.version>20170516</json.version>
